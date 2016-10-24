@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Add Notes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="lib/angular.min.js"></script>
+        <script src="lib/angular-route.min.js"></script>
+        <script src="module.js"></script>
+        <link rel="stylesheet" href="Styles.css"/>
+    </head>
+    <body>
+        <header>
+            <h2>Notes Application</h2>
+       
+        </header>
+        <section>
+            Add Notes here
+            <form ng-controller="addnotectrl">
+            <input type="text" placeholder="Add a note" ng-model="addnote" class="addnoteinput">
+           <input type="text" placeholder="The content of the note" ng-model="content"  class="addnoteinput"> 
+           <input type="submit" value="Add Note" style="width: 10%"/>
+           <input type="reset" value="Reset" style="width: 10%"/>
+            </form>
+            <a href="listnotes.html">List Notes</a>
+        </section>
+    </body>
+</html>
